@@ -8,7 +8,7 @@ const { getContentFullData, getContentFullDataById } = require('./controllers/co
 const ytbControl = require('./controllers/youtube.control')
 
 
-app.set('port', process.env.PORT || 4000)
+const PORT = 8080 || process.env.PORT;
 
 app.use(cors())
 app.use(morgan('dev'))
