@@ -24,6 +24,4 @@ app.get('/getContentById/:id&:locales', getContentFullDataById)
 
 //app.use(express.static(path.join(__dirname, '/build')))
 
-app.listen(app.get('port'), () => {
-    console.log(`Server on port ${app.get('port')}`)
-})
+app.listen(app.get('port'))
