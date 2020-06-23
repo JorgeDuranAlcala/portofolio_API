@@ -1,15 +1,8 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "una express app cualquiera",
   "main": "app.js",
-  "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js",
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "contentful": "^7.14.4",
     "cors": "^2.8.5",
@@ -18,5 +11,20 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
     "request": "^2.88.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeDuranAlcala/portofolio_API.git"
+  },
+  "author": "Jorge Duran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeDuranAlcala/portofolio_API/issues"
+  },
+  "homepage": "https://github.com/JorgeDuranAlcala/portofolio_API#readme"
 }
