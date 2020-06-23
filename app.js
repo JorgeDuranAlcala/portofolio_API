@@ -8,7 +8,7 @@ const { getContentFullData, getContentFullDataById } = require('./controllers/co
 const ytbControl = require('./controllers/youtube.control')
 
 
-const PORT = 8080 || process.env.PORT;
+app.set('port', process.env.PORT || 4000)
 
 app.use(cors())
 app.use(morgan('dev'))
@@ -24,4 +24,6 @@ app.get('/getContentById/:id&:locales', getContentFullDataById)
 
 //app.use(express.static(path.join(__dirname, '/build')))
 
-app.listen(app.get('port'))
+app.listen(app.get('port'), () => {
+    console.log(`Server on port ${app.get('port')}`)
+})
